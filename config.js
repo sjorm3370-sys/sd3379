@@ -1,5 +1,4 @@
-// 공개 설정만 입력하세요. service_role / secret 키는 절대 넣지 마세요.
 window.APP_CONFIG = {
-  SUPABASE_URL: 'https://YOUR_PROJECT.supabase.co',
-  SUPABASE_ANON_KEY: 'YOUR_SUPABASE_PUBLISHABLE_OR_ANON_KEY'
+  SUPABASE_URL: https://oujtxzcrphprudmfvmho.supabase.co,
+  SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91anR4emNycGhwcnVkbWZ2bWhvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM5MTgxMzgsImV4cCI6MjEwOTQ5NDEzOH0.fGHQLgB4IY6QuVRU6nHAVP8RUjs7aCEMu6KoFQDVRC4
 };
