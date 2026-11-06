@@ -24,7 +24,7 @@ create policy tasks_select on public.tasks for select to authenticated using ((s
 create policy tasks_insert on public.tasks for insert to authenticated with check ((select auth.uid())=user_id);
 create policy tasks_update on public.tasks for update to authenticated using ((select auth.uid())=user_id) with check ((select auth.uid())=user_id);
 create policy tasks_delete on public.tasks for delete to authenticated using ((select auth.uid())=user_id);
--- 自分のカードだけを一つのトランザクションで入れ替える。
+-- 현재 계정의 카드만 단일 트랜잭션으로 교체합니다.
 create function public.replace_my_tasks(p_tasks jsonb) returns void
 language plpgsql security invoker set search_path = '' as $$
 declare v_uid uuid := auth.uid();
